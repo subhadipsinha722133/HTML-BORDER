@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+           .second{
+            /* position: absolute; */
+            height: 200px;
+            width: 2px;
+            /* background-color: black; */
+            border: 2px dotted ;
+            border-top-width:7px ;
+            animation: orbit 20s linear infinite;
+
+}
+
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="second"></div>
+</body>
+</html>
